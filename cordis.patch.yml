@@ -1,0 +1,3 @@
+- insert:
+    - id: harness-control-bridge-v1
+      name: './index.mjs'

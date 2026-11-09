@@ -1,0 +1,48 @@
+{
+  "name": "dsh-plugin-codex-control",
+  "version": "1.0.2",
+  "description": "Codex 控制桥接：会话同步显示、查询进度与停止任务",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "harness-control": "cli.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "cli.mjs",
+    "paths.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "author": "rixodx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rixodx/dsh-plugin-codex-control.git"
+  },
+  "homepage": "https://github.com/rixodx/dsh-plugin-codex-control#readme",
+  "bugs": {
+    "url": "https://github.com/rixodx/dsh-plugin-codex-control/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "codex",
+    "cli",
+    "bridge"
+  ],
+  "scripts": {
+    "test": "node test/bridge.mjs"
+  }
+}
